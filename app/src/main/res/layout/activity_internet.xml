@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Internet"
+    android:background="@color/lightBlue"
+    >
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="Fixing the Internet"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Steps: \n \nCheck to make sure you are connected. \n\nThere are many reasons as to why you are not connected to the internet. It's important to understand how your PC (computer)
+receives internet. Your computer most likely receives internet in one of two ways, either through a wired connection (Ethernet) or a wireless connection (WIFI).\n\nEthernet\n\n1. Start by making sure your Ethernet cable is
+plugged in. If the cord is not plugged in properly, then that could cause you not to receive an internet connection. If this does not solve the problem, or your Ethernet cord is already plugged in properly, try step 2.
+\n\n2. For this step we are going to attempt to have Windows 10 find the problem for us. We can use an Internet Trouble Shooting program that is built into Windows to help fix the internet problems. To access the
+trouble shooter, go to Settings-> Network And Internet-> Status -> On the right hand side of the page under the header that says 'Status' scroll down until you see a button that says 'Network Trouble Shooter'
+\n\nThe Trouble Shooter is a program that will run and attempt to find problems, you should follow the suggestions that it offers to help solve your internet problems."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\nWIFI\n\nIf your computer is connected to the internet through WIFI these are the steps that need to be taken to fix your connection issues. \n\n1. Just like with the wired connection,
+we are going to start by making sure that you are actually connected. To view all of the WIFI Networks within range, click the WIFI icon located in the bottom right hand corner of your screen. Click 'Connect' on the network
+that is yours. This will connect you to the network. Please note that just because you are connected to a WIFI network does not mean you are receiving an internet connection. You may see a message under the name of your
+network that says 'Connected, no internet'. If this is the case then continue to step 2. \n\n2. For this step we are going to attempt to have Windows 10 find the problem for us. We can use an Internet Trouble Shooting program that is built into Windows to help fix the internet problems. To access the
+trouble shooter go to Settings-> Network And Internet-> Status -> On the right hand side of the page under the header that says 'Status' scroll down until you see a button that says 'Network Trouble Shooter'
+\n\nThe Trouble Shooter is a program that will run and attempt to find problems, you should follow the suggestions that it offers to help solve your internet problems.\n\n\n\n\n"
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

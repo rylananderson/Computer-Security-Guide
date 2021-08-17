@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadScreen"
+    android:background="@color/lightBlue">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/computerimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+        ></ImageView>
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Security Guide"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Windows 10 Edition"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="@font/kaushanscript_regular"
+        android:textColor="@color/black"
+
+        ></TextView>
+
+</RelativeLayout>

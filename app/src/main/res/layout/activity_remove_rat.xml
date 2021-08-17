@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveRat"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="Remove RAT"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\nIn this section we will learn how to remove a RAT"
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n1)Removing a RAT\n\nThis first method for removing a RAT is going to be the quickest, easiest, and most user friendly way. You will need to install an anti-malware program
+on your computer called Malwarebytes. This program detects and eliminates RATs by checking your computer for all the programs that have the features of a RAT. In addition to this, you get realtime
+in the background checking that will keep the RAT or any other future RATs from getting back into your computer. Click the Button below titled 'Malwarebytes' to be redirected to Malwarebytes website where
+you can download Malwarebytes for free or purchase a premium plan."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+            <Button
+                android:id="@+id/malwarebytesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Malwarebytes"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n2)Removing a RAT\n\nThis second method is only recommended for more experienced users. If your computer skills are at a basic level, then I would
+just follow the first method for removing the RAT. \n\nOverview\n\nIn this method, we are going to manually find the RAT by first looking at all the processes running, and then we are going
+to trace the process in Task Manager to its file location. From there you can choose to delete it AFTER you are certain that the file contains the RAT.\n\nSteps:\n\n1) Open CMD - either press
+down on the windows key and letter R and type CMD in the white box that pops up or search for CMD in the search bar on the bottom left hand side of the screen.\n2)Run a command - type in the following
+command: 'netstat - ano' \n3)Pay close attention to any process that has its state marked as ESTABLISHED. Make note of these PIDs, Process IDs, this does not always mean that the program is a RAT, like
+I said before, there are plenty of legitimate programs that may look like a RAT but are not harmful.\n4) Open Task Manager - Right click on the Task Bar and click on Task Manager. Once open, go to the details tab
+of Task Manager. \n5) Research Programs - compare the PIDs noted earlier to all the programs running in the details window of Task Manager. RESEARCH each of these only carefully and only remove programs
+that are listed as known RATs online. It is very important you search on the internet and do enough research on each program, deleting a program that is not a RAT could cause your computer not to
+ work properly"
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n\n"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeatRat"
+    android:background="@color/lightBlue">
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="RAT Features"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\nBefore we learn how to remove a RAT, let's first understand what a RAT is and how we can detect one."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\nDefining a RAT\n\nRAT is an acronym and stands for Remote Administration Tool. A RAT is a type of malware which gives hackers full access to your computer.
+Hackers can see what you are doing, view your files, access passwords, and even route their own data through your computer. RATs come in many different forms which can make it harder for an antivirus
+program to detect and eliminate this malicious software, especially after a hacker has gained access to your computer. Next we will examine some common signs to help you determined if your computer
+has been infected with a RAT."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\nDetecting a RAT\n\nHere are a few reg flags that you should watch out for if you believe a RAT is in your computer. (1) You see a bunch of command
+prompt windows on startup. The command line also known as CMD is a program on Windows 10 that allows users and anyone on the computer to execute commands, run programs, and edit files.
+If these windows are popping up immediately after you start your computer, it could have been set by the hacker to automatically do this every time you turn on your computer so the RAT will
+stay connected to the hacker's computer.\n(2) Search engines won't let you online. After opening Firefox or Chrome and searching for something online, if you receive a message that says
+'Our systems have detected unusual traffic from your computer network' then you may have a RAT. This message would indicate that the hacker may be using your computer to send their data through
+which is being detected and flagged as unusual activity. For example, the hacker may be using the RAT on your computer to create a bunch of email accounts for themselves. Without you knowing, the hacker
+could be using a program that they wrote which will create email accounts really quickly. This kind of activity is flagged by most email servers, which essentially gets you in trouble because the hacker
+was doing it through your computer.\n(3) You keep getting redirected to unsecure websites. This again would be noticed when you try to get online after opening Firefox or Chrome. You may notice that every
+time you try to visit a website, you are instead redirected to an unsecure website that looks identical to the real website. You can check this by verifying the URL of the webpage you are on. Most
+secure webpages start with https, and many unsecure webpages start with http. If you are trying to go to a shopping website like Amazon, which you know is secure and should always start with https, and
+find that the URL changed to http after typing it in, then you may have a RAT on your computer.\n(4)Computer is really slow. A slow or laggy computer could also be a sign that a RAT has gotton onto your
+computer. "
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\nConclusion\n\nIt is important to understand that not all of the features mentioned above are a guarantee that you have a RAT. There are some legitimate
+programs that may have some features that make them appear to be RATs, when in reality they are perfectly safe for your computer. In addition to this, some RATs are so well hidden that they may not show any of these features
+and are very hard to identify without the proper tools. In the next section, we will discuss how you can check for a RAT and the tools you should use to get the job done.
+If you suspect that you may have a RAT on your computer, there is no harm that can be done in checking for one. "
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n\n"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

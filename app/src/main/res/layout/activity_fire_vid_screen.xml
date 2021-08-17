@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fireVidScreen"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="Firewall Video"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+
+        />
+
+</RelativeLayout>

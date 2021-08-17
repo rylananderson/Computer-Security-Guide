@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slowComp"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="Slow Computer"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Steps: \n \n1. Start by disabling programs that run on startup. Startup programs are programs that begin to run in the background immediately after you turn on your
+computer. This often slows down your computer.\n\nTo disable startup programs, open Task Manager by right clicking the Taskbar and selecting Task Manger-> then expand the Task Manager once
+it is open to see all processes-> at the top of Task Manager screen, navigate to the tab that says 'Start Up'-> on this tab you will see a list of all of the programs that run -> to disable, simply
+click on a program and hit disable. \n\nIf you would like a video tutorial on how to do this, click the button under this text that says 'Disable Startup'. To watch the video in fullscreen, rotate
+your phone sideways and then tap the center of the screen for video controls."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <Button
+                android:id="@+id/startupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Disable Startup"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Steps: \n \n2. Try emptying your recycling bin. Too many un-deleted documents can slow down your computer. To do this, open your recycling bin, which
+is usually located at the top left hand corner on your Desktop, and then press 'Empty recycling bin'"
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n\n"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

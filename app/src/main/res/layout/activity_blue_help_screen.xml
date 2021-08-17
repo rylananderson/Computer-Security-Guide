@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlueHelpScreen"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="Blue/Black Screen"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Background Information: \n \nA blue or black screen preventing your computer from logging in is caused by an error your computer has encountered. There are a few different
+ways we can fix this problem.\n\nSteps: \n\n1. After turning on your computer and getting stuck at a blue or black screen, press your external power button to shut everything off. (This is the power button on the
+outside of your computer). Then press the external power again, to try re-booting. Repeat this process (Usually three times) until you are sent to a screen that says 'Automatic Repair'\n\nWhat we are tying to do
+here is to get your PC to recognize that there is a problem so it will display this menu to you. "
+            android:textSize="40dp"
+            android:textColor="@color/darkgrey"
+            android:fontFamily="sans-serif-black">
+        </TextView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n2. Select Advanced options, this should open to another screen. Then select advanced options again. Next select System Restore, this should be in the top left hand side of your screen."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n3. Simply restore your PC back to an earlier date. If you would like video instructions on how to preform System Restore, go back to the main menu on this app
+and click on Malware or Virus. Then scroll down to the bottom of the page until you see the button that says 'System Restore'. "
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n\n"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guide.compguide">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RemoveRat"></activity>
+        <activity android:name=".FeatRat" />
+        <activity android:name=".Internet" />
+        <activity android:name=".startUp" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ID-HERE" />
+
+        <activity android:name=".slowComp" />
+        <activity android:name=".sysRestoreScreen" />
+        <activity android:name=".avastScreen" />
+        <activity android:name=".malScreen" />
+        <activity android:name=".BlueHelpScreen" />
+        <activity android:name=".fireVidScreen" />
+        <activity android:name=".VirusHelpScreen" />
+        <activity android:name=".LoadScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

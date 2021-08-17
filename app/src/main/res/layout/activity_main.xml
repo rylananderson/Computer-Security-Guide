@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/lightBlue">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Problem"
+                android:textSize="42dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/virus_btn"
+                android:layout_marginTop="-40dp"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/malwareimg"
+                />
+            <ImageView
+                android:id="@+id/black_screen_btn"
+            android:layout_marginTop="-40dp"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:src="@drawable/black_screen"
+            />
+            <ImageView
+                android:id="@+id/slow_computer_btn"
+                android:layout_marginTop="-40dp"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/slow_computer"
+                />
+            <ImageView
+                android:id="@+id/internet"
+                android:layout_marginTop="-40dp"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/bad_internet"
+                />
+            <ImageView
+                android:id="@+id/featRat"
+                android:layout_marginTop="-40dp"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/feat"
+                />
+            <ImageView
+                android:id="@+id/removeRat"
+                android:layout_marginTop="-40dp"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:src="@drawable/remove"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

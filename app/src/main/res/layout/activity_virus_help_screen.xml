@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VirusHelpScreen"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/back_btn"
+        />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/back_btn"
+        android:text="Virus or Malware"
+        android:textSize="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Steps: \n \n1. Check to make sure that Windows Firewall is on. It is important to always have the Firewall turned on because if it is disabled, hackers can easily get into your computer. \n \nTo do this, go to Settings -> Update and Security -> Windows Security -> Third option down is Firewall and Network Protection.\n \nMake sure the Firewall is ON.
+\n\nFor more help, click the button under this text that says 'Windows Firewall Video' to watch a short video on how to enable your Firewall. Simply tap the video and press play. You can rotate your phone for fullscreen."
+                android:textSize="40dp"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <Button
+                android:id="@+id/fireBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Windows Firewall Video"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n \n2. Install Malwarebytes anti-malware program. To do this, open up a web browser and type in the following link:\n\nhttps://www.malwarebytes.com/mwb-download/\n\nOnce the website
+has loaded, click the 'Download Free' button on the left hand side under the tab that says 'Windows'. Follow the installation menu and once you have installed the program, navigate to the tab
+that says 'Quick Scan' and run a quick virus scan.\n\nFor more help on how to do this, click the button under this text to watch a short video."
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+            <Button
+                android:id="@+id/malBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Install Malwarebytes Video"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+
+            <TextView
+                android:id="@+id/txtWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\nYou can also purchase a premium Malwarebytes subscription. It may be a good idea to do this because with a premium account, you get
+extra protection in the background that is always watching out for you whenever you are online. To do this, open up a web browser or click the button under this text titled 'View Malwarebytes Premium'.
+If you want to type out the link in your web browser, type in the following:\n\nhttps://www.malwarebytes.com/pricing\n\nYou can choose the subscription that fits the number of devices you will be using."
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+            <Button
+                android:id="@+id/websiteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="View Malwarebytes Premium"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n \n3. Install Avast antivirus program. \n\nUsing multiple antivirus programs helps to insure that your computer is clean. To do this, open up a web browser and type in the following:\n\nAvast antivirus\n\nOnce the website
+has loaded, click the 'Free Download For PC' button in the center of the screen. Follow the installation menu, and once you have installed the program, navigate to the tab
+that says scan now, and run a quick virus scan.\n\nFor more help on how to do this, click the button under this text to watch a short video."
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+            <Button
+                android:id="@+id/avastBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Install Avast Video"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+
+            <TextView
+                android:id="@+id/txtWebsite2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n \nInstall Avast antivirus premium program. \n\nAvast premium will work in the background to keep you protected and includes several
+security browser ad-ons that will help keep you safe online. Click the button below this text to view the different premium subscriptions available for you."
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+            <Button
+                android:id="@+id/websiteAvastBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="View Avast Premium"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n \n4. Restore your computer to an earlier time. \n\nIf all else fails, this method usually works at getting the virus off of your computer.\n\nWhat we are doing is
+bringing the state of your computer back to an earlier time when it was working. This should remove the harmful programs that are getting in the way.\n\nHere are the steps:\n\nGo to your search bar in the bottom
+left hand side of your screen and type 'System Restore' -> click on the option that says 'Create a Restore Point'-> a screen should open and you may be prompted to enter in your password
+-> on this screen, go about one third of the way down and click the button on the right hand side that says 'System Restore'-> next select a date you would like to restore your computer back to-> follow
+the menu clicking yes on all of the prompts until your computer begins to restore itself.\n\nIf you would like help, or want to see how to do this, click the button under this text for a short
+tutorial on how to restore your computer. Note: System Restore can take anywhere from thirty minutes to an hour depending on the speed of you computer."
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+            <Button
+                android:id="@+id/sysRestoreBtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="System Restore"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                ></Button>
+            <ImageView
+                android:id="@+id/warning"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/backup_data"
+                />
+            <TextView
+                android:id="@+id/backup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="It's always a good idea to back up or save all of your personal files and folders on a separate drive while doing any of these operations. To do this, purchases a
+flash drive and save a copy of all of your files on that flash drive."
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+
+
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="\n\n\n"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:textColor="@color/darkgrey"
+                android:fontFamily="sans-serif-black"> </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
