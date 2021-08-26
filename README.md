@@ -9,4 +9,4 @@ introduces the user to the topic and defines the terminology when needed. The fo
 ## Tools and Features
 The Computer Security Guide was coded in Java using Android Studio.
 ## Installation
-Download and open the files inside of android studio.
+Download and open the files inside of android studio. At the bottom of each screen's layout.xml you can find the code for an ad Banner. Simply replace the test banner with your own ad banner id to run your own ads.
